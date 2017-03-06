@@ -12,9 +12,87 @@
 		}
 
 		//var a=(3<2)||0||(5-3)||true;
-		var a=(3<2)||0;
+		var a=(3>2)||0||(5-3);
 		alert(a);
-		
+
+        //var b1={v:"this is b1"};
+        //var b2={v:"this is b2"};
+		// function b(){
+		// 	alert(this.v);
+		// }
+		// b();			//(1)输出_______ undefined__________
+		// window.b();	    //(2)输出_______ undefined__________
+		// b.call(b1);		//(3)输出____    this is b1__________
+		// b.call(b2);		//(4)输出________this is b2__________
+
+		// var a=function(){
+		// 	  return function(x,y){return x+y;}
+		// 	}();
+		// var x=5;
+		// var y="6";	
+		// alert(a(x,y));	//(1)输出_______  _56_____________
+
+		// var a=function(){
+		// 	  return function(x,y){return x+y;}
+		// 	}();
+		// var x="5";
+		// var y="6";	
+		// alert(a(x,y));	//(1)输出_______  _56_____________
+
+        // var a=3;
+        // Number.prototype.add = function(num){
+        //     return this.valueOf()+num;
+        // }
+        // alert(a.add(5));//8
+
+  //       Object.clone = function (targetObj){
+
+  //           if(typeof targetObj !== "object" ){
+  //        	   return targetObj;
+  //           }
+
+	 //        var cloneObj = {};
+
+	 //        if(targetObj.constructor == Array){
+	 //            cloneObj = [];
+	 //        }
+
+	 //        for(var i in targetObj){
+	 //         	cloneObj[i] = Object.clone(targetObj[i]);
+	 //        }
+
+	 //        return cloneObj;
+     //   };
+
+		// var a = {name:"jack",age:20,say:function(){alert('ok')}};
+		// var b = Object.clone(a);
+		// alert(b.name); 
+		// b.say();
+
+	    // function sum(){
+	    //   var sum = 0;
+	    //   if(arguments.length > 0){
+	    //     for(var i = 0; i < arguments.length; i++){
+	    //     	sum += arguments[i];  
+	    //     }
+	    //     return sum;
+	    //   }
+	    // }
+
+        //alert(sum(100,200,500,900,300));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	</script>
 </head>
