@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <script src="jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div>
+    <spn>111</spn>
+    <spn>222</spn>
+    <spn>333</spn>
+</div>
+<div>
+    <spn>111</spn>
+    <spn id="aaa">222</spn>
+    <spn>333</spn>
+</div>
+<div>
+    <spn>111</spn>
+    <spn>222</spn>
+    <spn>333</spn>
+</div>
+
+
+<script>//动画
+    $(function () {
+        $("div").click(function () {
+            $("#aaa").toggle();
+        })
+    })
+</script>
+</body>
+</html>
