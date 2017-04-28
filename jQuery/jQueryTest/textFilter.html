@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>textFilter</title>
+    <style>
+        .text{
+            border: 1px solid green;
+        }
+    </style>
+    <script src="jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<div>
+    <spn>111</spn>
+    <spn>222</spn>
+    <spn>333</spn>
+</div>
+<div>
+    <spn>111</spn>
+    <spn id="aaa">jyy</spn>
+    <spn>333</spn>
+</div>
+<div>
+    <spn>111</spn>
+    <spn>jyc</spn>
+    <spn>333</spn>
+</div>
+<table border="1">
+    <tr><td>TD </td><td></td></tr>
+    <tr><td>TD </td><td></td></tr>
+    <tr><td></td><td>TD </td></tr>
+</table>
+
+<script>
+    //$("spn:contains('jyy')").hide();
+    //$("spn:contains('jyy')").css("text-decoration","underline");
+//    $(function () {//根据内容选择
+//        $("spn:contains('111')").toggle(function () {
+//            $(this).css("background","green");
+//        },function () {
+//            $(this).css("background","red");
+//        })
+//    })
+
+    $(function () {//空的填充
+        //$("td:empty").text("wwwww").css("background-color","yellow");
+        //$(":empty").text("wwwww").css("background-color","red");
+        $("div:has(spn)").addClass("text");//包含
+
+
+        })
+
+
+
+</script>
+</body>
+</html>

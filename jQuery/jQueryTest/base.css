@@ -1,0 +1,23 @@
+textarea {
+    height: 35px;
+}
+
+div {
+    color: red;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border-width: 0;
+}
+
+.marked {
+    background-color: yellow;
+    border: 3px solid red;
+}
+
+.focus{
+    border: 1px solid #f00;
+    background: #fcc;
+}

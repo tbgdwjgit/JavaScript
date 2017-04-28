@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>formSelector</title>
+    <link rel="stylesheet" type="text/css" href="base.css"/>
+    <script src="jquery-1.7.2.min.js"></script>
+</head>
+<body>
+<!--form>
+    <fieldset>
+        <input type="button" value="Input Button"/>
+        <input type="checkbox"/>
+        <input type="file"/>
+        <input type="hidden"/>
+        <input type="image"/>
+        <input type="password"/>
+        <input type="radio"/>
+        <input type="reset"/>
+        <input type="submit"/>
+        <input type="text"/>
+        <select>
+            <option>Option</option>
+        </select>
+        <textarea></textarea>
+        <button>Button</button>
+    </fieldset>
+</form-->
+
+<!--div>
+    <form action="#" method="POST" id="regForm">
+        <fieldset>
+            <legend>个人基本信息</legend>
+            <div>
+                <label for="username">名称：</label>
+                <input id="username" type="text"/>
+            </div>
+            <div>
+                <label for="pass">密码：</label>
+                <input id="pass" type="password"/>
+            </div>
+            <div>
+                <label for="msg">详细信息：</label>
+                <textarea id="msg"></textarea>
+            </div>
+        </fieldset>
+
+    </form>
+</div-->
+<script>
+
+//    $(function () {//表单
+//        //var input=$(":button").addClass("marked");
+//        //var input=$("input:image").addClass("marked");
+//        var input=$(":input").addClass("marked");
+//
+//    })
+
+    $(function () {//选中
+     $(":input").focus(function () {
+         $(this).addClass("focus");
+     }).blur(function () {
+         $(this).removeClass("focus");
+     })
+
+    })
+
+
+</script>
+</body>
+</html>
