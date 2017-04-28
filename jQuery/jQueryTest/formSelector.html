@@ -47,6 +47,20 @@
 
     </form>
 </div-->
+
+<table>
+    <thead>
+     <tr><th>姓名</th><th>性别</th><th>暂住地</th></tr>
+    </thead>
+    <tbody>
+    <tr><th>张山</th><th>男</th><th>浙江宁波</th></tr>
+    <tr><th>李四</th><th>女</th><th>湖南长沙</th></tr>
+    <tr><th>王五</th><th>男</th><th>浙江杭州</th></tr>
+    <tr><th>马六</th><th>男</th><th>浙江温州</th></tr>
+    <tr><th>TOME</th><th>男</th><th>浙江杭州</th></tr>
+    <tr><th>ROSE</th><th>女</th><th>江苏南京</th></tr>
+    </tbody>
+</table>
 <script>
 
 //    $(function () {//表单
@@ -56,15 +70,19 @@
 //
 //    })
 
-    $(function () {//选中
-     $(":input").focus(function () {
-         $(this).addClass("focus");
-     }).blur(function () {
-         $(this).removeClass("focus");
-     })
+//    $(function () {//选中
+//     $(":input").focus(function () {
+//         $(this).addClass("focus");
+//     }).blur(function () {
+//         $(this).removeClass("focus");
+//     })
+//
+//    })
 
+    $(function () {
+        $("tr:odd").addClass("odd");
+        $("tr:even").addClass("even");
     })
-
 
 </script>
 </body>

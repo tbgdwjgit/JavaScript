@@ -21,3 +21,14 @@ fieldset {
     border: 1px solid #f00;
     background: #fcc;
 }
+
+table,tr{
+    border:1px solid #F00;
+}
+th{
+    border:1px solid blue;
+}
+.even{background: #eaffad
+}/*奇数行样式*/
+.odd{background: #ff96c2
+}/*偶数行样式*/
