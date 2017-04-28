@@ -48,42 +48,141 @@
     </form>
 </div-->
 
-<table>
+<!--table>
     <thead>
-     <tr><th>姓名</th><th>性别</th><th>暂住地</th></tr>
+    <tr>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>暂住地</th>
+    </tr>
     </thead>
     <tbody>
-    <tr><th>张山</th><th>男</th><th>浙江宁波</th></tr>
-    <tr><th>李四</th><th>女</th><th>湖南长沙</th></tr>
-    <tr><th>王五</th><th>男</th><th>浙江杭州</th></tr>
-    <tr><th>马六</th><th>男</th><th>浙江温州</th></tr>
-    <tr><th>TOME</th><th>男</th><th>浙江杭州</th></tr>
-    <tr><th>ROSE</th><th>女</th><th>江苏南京</th></tr>
+    <tr>
+        <th>张山</th>
+        <th>男</th>
+        <th>浙江宁波</th>
+    </tr>
+    <tr>
+        <th>李四</th>
+        <th>女</th>
+        <th>湖南长沙</th>
+    </tr>
+    <tr>
+        <th>王五</th>
+        <th>男</th>
+        <th>浙江杭州</th>
+    </tr>
+    <tr>
+        <th>马六</th>
+        <th>男</th>
+        <th>浙江温州</th>
+    </tr>
+    <tr>
+        <th>TOME</th>
+        <th>男</th>
+        <th>浙江杭州</th>
+    </tr>
+    <tr>
+        <th>ROSE</th>
+        <th>女</th>
+        <th>江苏南京</th>
+    </tr>
+    </tbody>
+</table-->
+
+<p class="contentNew">JQuery Code</p>
+
+<pre class="brush: javascript;">
+&lt;style>
+td { padding:3px 11px; border-bottom:1px solid #95bce2; vertical-align:top; text-align:center; }
+.click{ background:yellow; }
+&lt;/style>
+
+&lt;script type="text/javascript">
+jQuery(document).ready(function(){
+	jQuery(".stripe tr").click(function(){
+		jQuery(this).toggleClass("click");
+	})
+});
+&lt;/script>
+</pre>
+
+<table class="stripe" width="50%" border="0" cellspacing="0" cellpadding="0" style="line-height:150%;">
+    <!--用class="stripe"来标识需要使用该效果的表格-->
+    <thead>
+    <tr>
+        <th>姓名</th>
+        <th>QQ</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Gonn</td>
+        <td>252211974</td>
+        <td>gonnsai@163.com</td>
+    </tr>
+    <tr>
+        <td>Gonn</td>
+        <td>252211974</td>
+        <td>gonnsai@163.com</td>
+    </tr>
+    <tr>
+        <td>Gonn</td>
+        <td>252211974</td>
+        <td>gonnsai@163.com</td>
+    </tr>
+    <tr>
+        <td>Gonn</td>
+        <td>252211974</td>
+        <td>gonnsai@163.com</td>
+    </tr>
+    <tr>
+        <td>Gonn</td>
+        <td>252211974</td>
+        <td>gonnsai@163.com</td>
+    </tr>
+    <tr>
+        <td>Gonn</td>
+        <td>252211974</td>
+        <td>gonnsai@163.com</td>
+    </tr>
     </tbody>
 </table>
+
+
 <script>
 
-//    $(function () {//表单
-//        //var input=$(":button").addClass("marked");
-//        //var input=$("input:image").addClass("marked");
-//        var input=$(":input").addClass("marked");
-//
-//    })
+    //    $(function () {//表单
+    //        //var input=$(":button").addClass("marked");
+    //        //var input=$("input:image").addClass("marked");
+    //        var input=$(":input").addClass("marked");
+    //
+    //    })
 
-//    $(function () {//选中
-//     $(":input").focus(function () {
-//         $(this).addClass("focus");
-//     }).blur(function () {
-//         $(this).removeClass("focus");
-//     })
-//
-//    })
+    //    $(function () {//选中
+    //     $(":input").focus(function () {
+    //         $(this).addClass("focus");
+    //     }).blur(function () {
+    //         $(this).removeClass("focus");
+    //     })
+    //
+    //    })
 
     $(function () {
-        $("tr:odd").addClass("odd");
-        $("tr:even").addClass("even");
-    })
+//        $("tbody>tr:odd").addClass("odd");//奇数
+//        $("tbody>tr:even").addClass("even");//偶数
+//        //$("tbody>tr:contains('ROSE')").addClass("focus");//高亮
+//        $("tr:contains('马六')").addClass("focus");//高亮
+//        $("th:contains('ROSE')").addClass("focus");//高亮
 
+//        jQuery("tr").click(function () {
+//            jQuery(this).toggleClass("click");
+//        })
+
+        $("th").click(function () {
+            $(this).toggleClass("click");
+        })
 </script>
 </body>
 </html>

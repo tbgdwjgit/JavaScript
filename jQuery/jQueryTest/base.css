@@ -17,18 +17,45 @@ fieldset {
     border: 3px solid red;
 }
 
-.focus{
+.focus {
     border: 1px solid #f00;
     background: #fcc;
 }
 
-table,tr{
-    border:1px solid #F00;
+/*
+table, tr {
+    border: 1px solid #F00;
 }
-th{
-    border:1px solid blue;
+
+th {
+    border: 1px solid blue;
+}*/
+
+tr, th {
+    padding: 3px 11px;
+    border-bottom: 1px solid #95bce2;
+    vertical-align: top;
+    text-align: center;
 }
-.even{background: #eaffad
-}/*奇数行样式*/
-.odd{background: #ff96c2
-}/*偶数行样式*/
+
+.stripe td {
+    padding: 3px 11px;
+    border-bottom: 1px solid #95bce2;
+    vertical-align: top;
+    text-align: center;
+}
+
+.click {
+    background: yellow;
+}
+
+.even {
+    background: #eaffad
+}
+
+/*偶数行样式*/
+.odd {
+    background: #ff96c2
+}
+
+/*奇数行样式*/
