@@ -170,18 +170,26 @@ jQuery(document).ready(function(){
     //    })
 
     $(function () {
-//        $("tbody>tr:odd").addClass("odd");//奇数
-//        $("tbody>tr:even").addClass("even");//偶数
+        $("tbody>tr:odd").addClass("odd");//奇数
+        $("tbody>tr:even").addClass("even");//偶数
 //        //$("tbody>tr:contains('ROSE')").addClass("focus");//高亮
 //        $("tr:contains('马六')").addClass("focus");//高亮
 //        $("th:contains('ROSE')").addClass("focus");//高亮
 
-//        jQuery("tr").click(function () {
-//            jQuery(this).toggleClass("click");
-//        })
+//        jQuery("tbody>tr:odd").click(function () {
+//            jQuery(this).toggleClass("focus");
+//        });
+//        jQuery("tbody>tr:even").click(function () {
+//            jQuery(this).toggleClass("focus");
+//        });
 
-        $("th").click(function () {
-            $(this).toggleClass("click");
+        jQuery("tbody>tr").click(function () {
+            jQuery(this).toggleClass("testg");
+        });
+
+
+//        $("tr").click(function () {
+//            $(this).toggleClass("click");
         })
 </script>
 </body>

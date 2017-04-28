@@ -59,3 +59,7 @@ tr, th {
 }
 
 /*奇数行样式*/
+
+.testg{
+    background-color: springgreen;
+}
