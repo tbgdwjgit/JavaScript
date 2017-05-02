@@ -19,21 +19,55 @@
 //       }
 //    }
 
+//click dbclick hover mousedown mouseenter mouseleave mousemove mouseout(支持事件冒泡) mouseover（支持事件冒泡) mouseup
 //  $(function () {
 //      $("p").click(function () {
 //          alert($(this).html());
 //      })
 //  })
 
-$(function () {
-    $("p").dblclick (function () {
-        alert($(this).html());
-    })
-})
+//$(function () {
+//    $("p").dblclick (function () {
+//        alert($(this).html());
+//    })
+//})
+
+//$(function () {
+//    $("p").hover (function () {
+//        alert($(this).html());
+//    })
+//})
+
+//$(function () {
+//    var i=0;
+//    $("p").mousemove (function () {
+//        console.log(i++);
+//    })
+//})
+
+//$(function () {
+//    var i=0;
+//    $("p").mouseup(function () {
+//        console.log(i++);
+//    })
+//})
+   //keydown keypress keyup
+
+//$(function () {
+//    $(document).keydown(function (event) {
+//        alert(event.keyCode);
+//    })
+//})
 
 $(function () {
-    $("p").hover (function () {
-        alert($(this).html());
+//    $(document).keydown(function (event) {
+//        alert("keydown");
+//    })
+//    $(document).keypress(function (event) {
+//        alert("keypress");
+//    })
+    $(document).keyup(function (event) {
+        alert("keyup");
     })
 })
 
