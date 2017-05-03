@@ -11,6 +11,10 @@
 <p>haha2</p>
 <p>haha3</p>
 <p>haha4</p>
+<img src="sd">
+<div>
+<p>123</p>
+</div>
 <script>
 //    var p=document.getElementsByTagName("p");//原生js
 //    for(var i=0;i<p.length;i++){
@@ -19,7 +23,9 @@
 //       }
 //    }
 
-//click dbclick hover mousedown mouseenter mouseleave mousemove mouseout(支持事件冒泡) mouseover（支持事件冒泡) mouseup
+//鼠标事件
+//click dbclick hover mousedown mouseenter mouseleave mousemove
+// mouseout(支持事件冒泡) mouseover（支持事件冒泡) mouseup
 //  $(function () {
 //      $("p").click(function () {
 //          alert($(this).html());
@@ -51,26 +57,47 @@
 //        console.log(i++);
 //    })
 //})
-   //keydown keypress keyup
 
+//键盘事件 keydown keypress keyup
 //$(function () {
 //    $(document).keydown(function (event) {
 //        alert(event.keyCode);
 //    })
 //})
 
-$(function () {
-//    $(document).keydown(function (event) {
-//        alert("keydown");
+//$(function () {
+////    $(document).keydown(function (event) {
+////        alert("keydown");
+////    })
+////    $(document).keypress(function (event) {
+////        alert("keypress");
+////    })
+//    $(document).keyup(function (event) {
+//        alert("keyup");
 //    })
-//    $(document).keypress(function (event) {
-//        alert("keypress");
-//    })
-    $(document).keyup(function (event) {
-        alert("keyup");
-    })
-})
+//})
 
+//浏览器事件 error（禁用）  resize scroll
+//$(function () {
+//    $("img").error(function () {
+//        alert("没有图片！")
+//    })
+//})
+//$(window).scroll(function () {
+//    alert("哈哈");
+//})
+//$(window).resize(function () {
+//    alert("大小变化");
+//})
+//$().ready(function () {
+//
+//})
+//$(ready).ready(function () {
+//
+//})
+//$(function () {
+//
+//})
 
 </script>
 
