@@ -57,13 +57,15 @@
 </div>
 
 <script>
-    $.validator.setDefaults({
-        submitHandler: function() {
-            alert("提交事件!");
-        }
-    });
+//    $.validator.setDefaults({
+//        submitHandler: function() {
+//            alert("提交事件!");
+//        }
+//    });
     $().ready(function() {
-        $("#commentForm").validate();
+        $("#commentForm").validate({
+            debug:true
+        });
     });
 
 
