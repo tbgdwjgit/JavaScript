@@ -4,16 +4,34 @@
     <meta charset="UTF-8">
     <title>eventTest</title>
     <link rel="stylesheet" type="text/css" href="base.css"/>
+    <style>
+        p{
+            width:100px;
+            height: 50px;
+            background-color: darkgreen;
+            border-radius: 5px;
+            text-align: center;
+            line-height: 50px;
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 20px;
+        }
+        .pbtn{
+            background-color: green;
+        }
+    </style>
     <script src="jquery-1.7.2.min.js"></script>
 </head>
 <body>
-<p>haha1</p>
+<!--p>haha1</p>
 <p>haha2</p>
 <p>haha3</p>
-<p>haha4</p>
+<p>haha4</p-->
 <img src="sd">
 <div>
 <p>123</p>
+    <button id="btn">按钮</button>
+    <p>按钮</p>
 </div>
 <script>
 //    var p=document.getElementsByTagName("p");//原生js
@@ -98,6 +116,35 @@
 //$(function () {
 //
 //})
+ //bind delegate off on one unbind undelegate 邦定事件处理器
+ $(function () {
+//     $("#btn").bind("click mouseleave",function () {
+//        alert("haha")
+//     })
+//     $("#btn").bind({
+//        click:function () {
+//            alert("click");
+//        } ,
+//         mouseleave:function () {
+//             alert("mousemove");
+//         }
+//     })
+//     $("p").bind({
+//         mouseover:function () {
+//             $(this).addClass("pbtn");
+//         },
+//         mouseout:function () {
+//             $(this).removeClass("pbtn");
+//         }
+//     })
+     $("p").bind("mouseover mouseout",function () {
+         $(this).toggleClass("pbtn");
+     })
+ })
+
+  //事件对象 event.currentTarget event.Target event.delegateTarget
+  //event.pageX event.pageY evnet.type event.preventDefault() 阻止默认事件
+ // event.stopPropagation 阻止冒泡事件
 
 </script>
 
