@@ -6,7 +6,7 @@
 </head>
 <body>
 
-
+1111
 
 <script>
     function commafy(num) {
@@ -22,7 +22,16 @@
         return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
     }
     var n=12345671212;
-    alert(commafy(12345671212));
+    //alert(commafy(12345671212));
+    //alert(navigator.userAgent);
+
+    //document.write只能重绘整个页面
+    document.write("重绘整个页面");
+    //innerHTML可以重绘页面的一部分
+    //document.innerHTML("重绘页面的一部分");
+    //document.getElementsByTagName("body").innerHTML="123"
+    alert(document.getElementsByTagName("body").innerHTML);
+
 </script>
 </body>
 </html>
