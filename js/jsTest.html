@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>原生js</title>
+</head>
+<body>
+
+
+
+<script>
+    function commafy(num) {
+        num = num + '';
+        var reg =/(\d)(?=(?:\d{3})+$)/g;
+        if(reg.test(num)){
+            num = num.replace(reg, '$1,');
+        }
+        return num;
+    }
+
+    function toThousands(num) {
+        return (num || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
+    }
+    var n=12345671212;
+    alert(commafy(12345671212));
+</script>
+</body>
+</html>
